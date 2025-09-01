@@ -18,64 +18,63 @@
   <meta name="twitter:description" content="Your feedback helps others know what it’s like to work with Adam Peters. Leave a review and get rewarded!">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/michaellouis-cyberbacker/AdamPeters/refs/heads/main/Images/Adam%20Peters.webp">
 
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adam Peters - Client Review Program</title>
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Adam Peters - Client Review Program</title>
+  <!-- Fonts: Inter + Lora -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@700&display=swap" rel="stylesheet">
 
-<!-- Fonts: Inter + Lora -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0d1b4c;      /* Deep navy blue */
+      --primary-soft:#e6ecf7; /* Light blue background */
+      --ink:#0a0a23;          /* Very dark navy for headings */
+      --text:#2d3e5f;         /* Softer blue-gray for body text */
+    }
 
-<style>
-  :root{
-    --beige:#c19a6b;
-    --beige-soft:#f1e8dc;
-    --ink:#000;
-    --text:#444;
-  }
+    body{
+      font-family:'Inter', sans-serif;
+      margin:0; padding:0; text-align:center; background:#fff; position:relative; min-height:100vh;
+    }
 
-  body{
-    font-family:'Inter', sans-serif;
-    margin:0; padding:0; text-align:center; background:#fff; position:relative; min-height:100vh;
-  }
+    body::after{
+      content:""; position:fixed; bottom:0; left:0; width:100%; height:48%;
+      background: radial-gradient(60% 60% at 50% 100%, rgba(13,27,76,0.60) 0%, rgba(13,27,76,0.30) 35%, rgba(13,27,76,0) 70%);
+      filter: blur(42px); pointer-events:none; z-index:-1;
+    }
 
-  body::after{
-    content:""; position:fixed; bottom:0; left:0; width:100%; height:48%;
-    background: radial-gradient(60% 60% at 50% 100%, rgba(193,154,107,0.60) 0%, rgba(193,154,107,0.30) 35%, rgba(193,154,107,0) 70%);
-    filter: blur(42px); pointer-events:none; z-index:-1;
-  }
+    .container{ max-width:600px; margin:auto; padding:20px; }
+    img.profile{
+      width:140px; height:140px; border-radius:50%; object-fit:cover; border:4px solid var(--primary); margin-bottom:15px;
+    }
 
-  .container{ max-width:600px; margin:auto; padding:20px; }
-  img.profile{
-    width:140px; height:140px; border-radius:50%; object-fit:cover; border:4px solid var(--beige); margin-bottom:15px;
-  }
-
-  h1{
-    font-family:'Lora', serif;
-    font-weight:700;
-    font-size:2rem;
-    color:var(--ink);
-    margin:0 0 10px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-  }
+    h1{
+      font-family:'Lora', serif;
+      font-weight:700;
+      font-size:2rem;
+      color:var(--ink);
+      margin:0 0 10px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
 
     .highlight {
       font-weight: bold;
-      color: #c19a6b;
+      color: var(--primary);
     }
 
-  p.description{ font-size:1rem; color:var(--text); line-height:1.55; margin:0 auto 10px; }
+    p.description{ font-size:1rem; color:var(--text); line-height:1.55; margin:0 auto 10px; }
 
     .reviews {
-      background: #f9f7f5;
-      border-left: 4px solid #c19a6b;
+      background: #f1f5fb;
+      border-left: 4px solid var(--primary);
       padding: 15px;
       margin-top: 25px;
     }
@@ -92,80 +91,79 @@
     .review-author {
       font-style: italic;
       color: #555;
-  }
-
-  .btn{
-    display:flex; align-items:center; justify-content:center; gap:12px;
-    margin:12px auto; padding:16px; width:90%; max-width:400px;
-    text-decoration:none; border-radius:8px; font-size:1.1em; font-weight:500;
-    background-color:var(--beige); color:#000; box-sizing:border-box;
-    transition:transform .1s ease-in-out, opacity .2s;
-  }
-  .btn img{ height:24px; width:auto; }
-  .btn:hover{ opacity:.85; transform:scale(1.02); }
-
-  .btn.black-btn{
-    background:#000;
-    padding:12px;
-  }
-  .btn.black-btn img{ height:30px; }
-
-  .btn.compass{ animation:pulse 2.5s infinite; }
-  @keyframes pulse{
-    0%,100%{ transform:scale(1); box-shadow:0 0 0 rgba(0,0,0,0);}
-    50%{ transform:scale(1.04); box-shadow:0 0 18px rgba(0,0,0,.28);}
-  }
-
-  .instructions{ margin-top:20px; font-size:1rem; color:var(--text); }
-  .incentive{
-    margin:12px auto 6px; padding:12px 14px; max-width:520px;
-    background:linear-gradient(90deg, #fff7ec, #f5e7d4);
-    border:1px solid #e0c9a8; border-radius:10px;
-    color:#5a3e2b; font-weight:700;
-  }
-  .closing-line{ margin-top:10px; font-size:1rem; color:var(--text); font-style:italic; }
-
-  .contact-section{
-    margin-top:20px; padding:10px; font-size:0.95rem; color:var(--text);
-  }
-  .contact-section a{ color:var(--text); text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
-  .contact-section img{ width:20px; height:20px; }
-
-  .ray-homes-icon{
-    display:inline-block; 
-    background:rgba(193,154,107,0.65); /* More faded beige background */
-    padding:6px; 
-    border-radius:6px;
-    margin-top:8px;
-  }
-  .ray-homes-icon img{ 
-    height:24px; 
-    width:auto; 
-    display:block; 
-  }
-
-  /* Sticky bar for mobile */
-  .sticky-bar{ display:none; }
-  @media (max-width:480px){
-    h1{ font-size:1.7rem; }
-    p.description{ font-size:.95rem; }
-    .btn{ font-size:1rem; padding:14px; width:95%; }
-    .btn img{ height:22px; }
-
-    .sticky-bar{
-      display:flex; position:fixed; bottom:-88px; left:0; width:100%;
-      background:rgba(255,255,255,.96); border-top:1px solid #d8d8d8;
-      justify-content:space-around; padding:8px 0; z-index:999; transition:bottom .3s ease-in-out;
-      backdrop-filter:saturate(1.3) blur(6px);
     }
-    .sticky-bar.show{ bottom:0; }
-    .sticky-bar a{
-      display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#000; font-size:.82rem;
-    }
-    .sticky-bar img{ height:28px; margin-bottom:4px; }
-  }
 
-</style>
+    .btn{
+      display:flex; align-items:center; justify-content:center; gap:12px;
+      margin:12px auto; padding:16px; width:90%; max-width:400px;
+      text-decoration:none; border-radius:8px; font-size:1.1em; font-weight:500;
+      background-color:var(--primary); color:#fff; box-sizing:border-box;
+      transition:transform .1s ease-in-out, opacity .2s;
+    }
+    .btn img{ height:24px; width:auto; }
+    .btn:hover{ opacity:.85; transform:scale(1.02); }
+
+    .btn.black-btn{
+      background:#000;
+      padding:12px;
+    }
+    .btn.black-btn img{ height:30px; }
+
+    .btn.compass{ animation:pulse 2.5s infinite; }
+    @keyframes pulse{
+      0%,100%{ transform:scale(1); box-shadow:0 0 0 rgba(0,0,0,0);}
+      50%{ transform:scale(1.04); box-shadow:0 0 18px rgba(0,0,0,.28);}
+    }
+
+    .instructions{ margin-top:20px; font-size:1rem; color:var(--text); }
+    .incentive{
+      margin:12px auto 6px; padding:12px 14px; max-width:520px;
+      background:linear-gradient(90deg, #f0f6ff, #dbe6f9);
+      border:1px solid #b0c4e6; border-radius:10px;
+      color:#0d1b4c; font-weight:700;
+    }
+    .closing-line{ margin-top:10px; font-size:1rem; color:var(--text); font-style:italic; }
+
+    .contact-section{
+      margin-top:20px; padding:10px; font-size:0.95rem; color:var(--text);
+    }
+    .contact-section a{ color:var(--text); text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
+    .contact-section img{ width:20px; height:20px; }
+
+    .ray-homes-icon{
+      display:inline-block; 
+      background:rgba(13,27,76,0.65);
+      padding:6px; 
+      border-radius:6px;
+      margin-top:8px;
+    }
+    .ray-homes-icon img{ 
+      height:24px; 
+      width:auto; 
+      display:block; 
+    }
+
+    /* Sticky bar for mobile */
+    .sticky-bar{ display:none; }
+    @media (max-width:480px){
+      h1{ font-size:1.7rem; }
+      p.description{ font-size:.95rem; }
+      .btn{ font-size:1rem; padding:14px; width:95%; }
+      .btn img{ height:22px; }
+
+      .sticky-bar{
+        display:flex; position:fixed; bottom:-88px; left:0; width:100%;
+        background:rgba(255,255,255,.96); border-top:1px solid #d8d8d8;
+        justify-content:space-around; padding:8px 0; z-index:999; transition:bottom .3s ease-in-out;
+        backdrop-filter:saturate(1.3) blur(6px);
+      }
+      .sticky-bar.show{ bottom:0; }
+      .sticky-bar a{
+        display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#000; font-size:.82rem;
+      }
+      .sticky-bar img{ height:28px; margin-bottom:4px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -226,10 +224,6 @@
 
   <p class="instructions"><strong>Please write one review.</strong></p>
 
-    <p class="description">
-
-  </p>
-
    <div class="reviews">
       <strong>Here are a few examples to inspire your review:</strong>
 
@@ -281,8 +275,8 @@
   const stickyBar = document.getElementById('sticky-bar');
 
   function toggleSticky(){
-    const rect = sampleReview.getBoundingClientRect();
-    if(rect.top < -50){ stickyBar.classList.add('show'); }
+    const rect = sampleReview?.getBoundingClientRect();
+    if(rect && rect.top < -50){ stickyBar.classList.add('show'); }
     else{ stickyBar.classList.remove('show'); }
   }
   window.addEventListener('scroll', toggleSticky, { passive: true });
@@ -291,15 +285,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
